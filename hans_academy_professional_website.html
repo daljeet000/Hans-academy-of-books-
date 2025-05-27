@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hans Academy - Professional eBooks Store</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f9f4;
+            color: #2a5d2a;
+            margin: 0; padding: 0;
+        }
+        header {
+            background-color: #4caf50;
+            padding: 15px 20px;
+            text-align: center;
+            color: white;
+            font-size: 2.4em;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav {
+            background: #388e3c;
+            display: flex;
+            justify-content: center;
+            padding: 12px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+            border-radius: 4px;
+            margin: 0 6px;
+        }
+        nav a:hover {
+            background-color: #2c6f2c;
+        }
+        main {
+            max-width: 960px;
+            margin: 30px auto 50px;
+            padding: 0 15px;
+        }
+        h2 {
+            border-bottom: 3px solid #4caf50;
+            padding-bottom: 6px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .book-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            max-width: 220px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .book-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .book-cover {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-bottom: 3px solid #4caf50;
+        }
+        .book-info {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .book-title {
+            font-weight: 700;
+            font-size: 1.1em;
+            margin: 0 0 8px 0;
+            color: #2a5d2a;
+        }
+        .book-desc {
+            font-size: 0.9em;
+            color: #4a7a4a;
+            margin-bottom: 12px;
+            min-height: 50px;
+        }
+        .book-price {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #388e3c;
+            margin-bottom: 12px;
+        }
+        .btn-buy {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+        }
+        .btn-buy:hover {
+            background-color: #388e3c;
+        }
+        section.payment-contact {
+            max-width: 960px;
+            background: white;
+            margin: 20px auto 40px;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 14px rgba(0,0,0,0.07);
+        }
+        section.payment-contact h2 {
+            margin-top: 0;
+        }
+        .payment-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 12px 0;
+            font-weight: 700;
+            color: #2a5d2a;
+        }
+        .payment-list li {
+            padding: 6px 0;
+        }
+        .contact-info p {
+            margin: 6px 0;
+            font-weight: 600;
+        }
+        .contact-info a {
+            color: #2a5d2a;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 16px 10px;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 600px) {
+            .books-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .book-card {
+                max-width: 90%;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 6px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>Hans Academy</header>
+
+<nav>
+    <a href="#hindi">Hindi Books</a>
+    <a href="#punjabi">Punjabi Books</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section id="hindi">
+    <h2>Hindi eBooks</h2>
+    <div class="books-container">
+        <div class="book-card">
+            <img class="book-cover" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80" alt="Mindset Book Cover" />
+            <div class="book-info">
+                <h3 class="book-title">Mindset – सोच बदलो, जीवन बदलो</h3>
+                <p class="book-desc">यह किताब आपके सोचने के तरीके को पॉजिटिव बनाने में मदद करती है।</p>
+                <p class="book-price">Price: ₹149</p>
+                <a href="upi://pay?pa=9358547604@ibl&pn=Hans Academy&am=149&cu=INR&tn=Mindset Book Purchase" class="btn-buy">Buy Now</a>
+            </div>
+        </div>
+        <div class="book-card">
+            <img class="book-cover" src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=400&q=80" alt="48 Power Laws Book Cover" />
+            <div class="book-info">
+                <h3 class="book-title">48 Power Laws – ताकत के 48 नियम</h3>
+                <p class="book-desc">यह किताब शक्ति, नियंत्रण और प्रभावशाली जीवन जीने के लिए 48 जरूरी सिद्धांत बताती है।</p>
+                <p class="book-price">Price: ₹199</p>
+                <a href="upi://pay?pa=9358547604-2@ybl&pn=Hans Academy&am=199&cu=INR&tn=48 Power Laws Book Purchase" class="btn-buy">Buy Now</a>
+            </div>
+        </div>
+        <div class="book-card">
+            <img class="book-cover" src="https://images.unsplash.com/photo-1496104679561-38c1f91432b0?auto=format&fit=crop&w=400&q=80" alt="Human Nature Book Cover" />
+            <div class="book-info">
+                <h3 class="book-title">Human Nature – इंसानी फितरत की गहराई</h3>
+                <p class="book-desc">इंसानों की सोच, भावना और व्यवहार को समझने वाली गहन किताब।</p>
+                <p class="book-price">Price: ₹179</p>
+                <a href="upi://pay?pa=9358547604@ibl&pn=Hans Academy&am=179&cu=INR&tn=Human Nature Book Purchase" class="btn-buy">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="punjabi" style="margin-top: 50px;">
+    <h2>Punjabi eBooks</h2>
+    <div class="books-container">
+        <div class="book-card">
+            <img class="book-cover" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=400&q=80" alt="Punjab Di Lok Kahaniyan Book Cover" />
+            <div class="book-info">
+                <h3 class="book-title">Punjab Di Lok Kahaniyan</h3>
+                <p class="book-desc">ਪੰਜਾਬੀ ਲੋਕ ਕਹਾਣੀਆਂ ਦੀ ਕਿਤਾਬ</p>
+                <p class="book-price">Price: ₹179</p>
+                <a href="upi://pay?pa=9358547604@ibl&pn=Hans Academy&am=179&cu=INR&tn=Punjab Di Lok Kahaniyan Purchase" class="btn-buy">Buy Now</a>
+            </div>
+        </div>
+        <div class="book-card">
+            <img class="book-cover" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" alt="Punjabi Poetry Book Cover" />
+            <div class="book-info">
+                <h3 class="book-title">Punjabi Poetry Collection</h3>
+                <p class="book-desc">ਪੰਜਾਬੀ ਕਵਿਤਾਵਾਂ ਦਾ ਸੰਕਲਪ</p>
+                <p class="book-price">Price: ₹159</p>
+                <a href="upi://pay?pa=9358547604-2@ybl&pn=Hans Academy&am=159&cu=INR&tn=Punjabi Poetry Collection Purchase" class="btn-buy">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="payment-contact" id="contact">
+    <h2>Payment & Contact Details</h2>
+    <ul class="payment-list">
+        <li>UPI Payment 1: 9358547604@ibl</li>
+        <li>UPI Payment 2: 9358547604-2@ybl</li>
+    </ul>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:daljeethans123@gmail.com">daljeethans123@gmail.com</a></p>
+        <p>WhatsApp/Phone: <a href="tel:+919358547604">9358547604</a></p>
+        <p>Instagram: <a href="https://instagram.com/_.daljeethans" target="_blank">@_.daljeethans</a></p>
+    </div>
+</section>
+
+</main>
+
+<footer>© 2025 Hans Academy. All rights reserved.</footer>
+
+</body>
+</html>
